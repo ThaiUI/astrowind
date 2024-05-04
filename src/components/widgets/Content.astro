@@ -37,19 +37,19 @@ const {
     tagline={tagline}
     classes={{
       container: 'max-w-xl sm:mx-auto lg:max-w-2xl',
-      title: 'text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading',
+      title: 'text-4xl md:text-5xl font-bold  mb-4 font-heading',
       subtitle: 'max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400',
     }}
   />
-  <div class="mx-auto max-w-7xl p-4 md:px-8">
+  <div class='mx-auto max-w-7xl p-4 md:px-8'>
     <div class={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
-      <div class="md:basis-1/2 self-center">
-        {content && <div class="mb-12 text-lg dark:text-slate-400" set:html={content} />}
+      <div class='md:basis-1/2 self-center'>
+        {content && <div class='mb-12 text-lg dark:text-slate-400' set:html={content} />}
 
         {
           callToAction && (
-            <div class="mt-[-40px] mb-8 text-primary">
-              <Button variant="link" {...callToAction} />
+            <div class='mt-[-40px] mb-8 text-primary'>
+              <Button variant='link' {...callToAction} />
             </div>
           )
         }
@@ -57,7 +57,7 @@ const {
         <ItemGrid
           items={items}
           columns={columns}
-          defaultIcon="tabler:check"
+          defaultIcon='tabler:check'
           classes={{
             container: `gap-y-4 md:gap-y-8`,
             panel: 'max-w-none',
@@ -68,20 +68,20 @@ const {
           }}
         />
       </div>
-      <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
+      <div aria-hidden='true' class='mt-10 md:mt-0 md:basis-1/2'>
         {
           image && (
-            <div class="relative m-auto max-w-4xl">
+            <div class='relative m-auto max-w-4xl'>
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
-                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+                  class='mx-auto w-full rounded-lg bg-gray-500 shadow-lg'
                   width={500}
                   height={500}
                   widths={[400, 768]}
-                  sizes="(max-width: 768px) 100vw, 432px"
-                  layout="responsive"
+                  sizes='(max-width: 768px) 100vw, 432px'
+                  layout='responsive'
                   {...image}
                 />
               )}

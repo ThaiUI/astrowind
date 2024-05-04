@@ -3,7 +3,30 @@ import { SITE } from 'astrowind:config';
 ---
 
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+  class='flex items-center gap-2 ml-2 text-2xl md:text-xl font-semibold text-gray-900 whitespace-nowrap dark:text-white'
 >
-  🚀 {SITE?.name}
+  <svg width='32' height='32' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path
+      d='M80 160C124.183 160 160 124.183 160 80C160 35.8172 124.183 0 80 0C35.8172 0 0 35.8172 0 80C0 124.183 35.8172 160 80 160Z'
+      fill='#2060B6'></path>
+    <path d='M33.6935 55.066L40.1905 36.2205H126.351L119.854 55.066H33.6935Z' fill='url(#paint0_linear_334_65)'></path>
+    <path
+      d='M126.351 36.2205C126.351 36.2205 68.2437 46.3154 68.2437 82.5491V128.878H93.2073V82.5491C93.2073 82.5491 93.9491 55.7568 119.776 55.7568L126.351 36.2205Z'
+      fill='white'></path>
+    <defs>
+      <linearGradient
+        id='paint0_linear_334_65'
+        x1='33.6935'
+        y1='45.5677'
+        x2='126.452'
+        y2='45.5677'
+        gradientUnits='userSpaceOnUse'
+      >
+        <stop stop-color='white'></stop>
+        <stop offset='1' stop-color='#2060B6'></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  {SITE?.name}
 </span>

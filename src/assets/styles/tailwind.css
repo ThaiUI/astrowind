@@ -90,3 +90,8 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+/* Added by ThaiUI */
+.font-heading {
+  @apply leading-tight;
+}
